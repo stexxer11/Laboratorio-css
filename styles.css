@@ -1,0 +1,15 @@
+/* Configuración global */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, "Segoe UI", sans-serif; background-color: #e2e8f0; padding: 40px; }
+/* Contenedor flexible */
+.contenedor-layout { display: flex; gap: 24px; max-width: 1100px; margin: 0 auto; }
+/* Reto 1: proporciones 80% y 20% */
+.seccion-principal { flex: 8; background-color: #ffffff; padding: 32px; border-radius: 8px; }
+.barra-lateral { flex: 2; background-color: #edf2f7; padding: 24px; border-left: 4px solid #3182ce; transition: background-color 0.3s ease; }
+h1 { font-size: 30px; margin-bottom: 20px; border-bottom: 2px solid #3182ce; padding-bottom: 10px; } /* Reto 2 */
+h2 { font-size: 22px; margin-bottom: 16px; }
+p { font-size: 16px; line-height: 1.6; margin-bottom: 16px; }
+/* Reto 3: efecto hover */
+.barra-lateral:hover { background-color: #dbeafe; }
+/* Adaptabilidad móvil */
+@media (max-width: 768px) { body { padding: 20px; } .contenedor-layout { flex-direction: column; } }
