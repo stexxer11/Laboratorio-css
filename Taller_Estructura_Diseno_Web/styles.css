@@ -1,0 +1,66 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eef2f7;
+    color: #333333;
+}
+
+/* Encabezado */
+header {
+    background-color: #183153;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Artículo principal */
+.noticia {
+    flex: 7;
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Barra lateral */
+.barra-lateral {
+    flex: 3;
+    min-width: 0;
+    background-color: #dbeafe;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Títulos */
+h1 {
+    color: #24374d;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+/* Párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
